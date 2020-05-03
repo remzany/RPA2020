@@ -1,0 +1,49 @@
+﻿@model spletna_aplikacija.Models.miljarder
+
+@{
+    ViewBag.Title = "Podrobnosti";
+}
+    <h2></h2>
+
+<div>
+    <h4>miljarder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Priimek)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Priimek)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.premozenje)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.premozenje)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.podjetje)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.podjetje)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Spremeni", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Nazaj", "Index")
+</p>

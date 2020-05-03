@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="stu.xsl"?>
+<redovalnica shemalocation="stu.xsd">
+	<student>
+		<imePriimek>DAnijel Volk</imePriimek>
+		<letnik>2</letnik>
+		<smer>INF</smer>
+		<stevilka>1267</stevilka>
+			<ocena>
+				<predmet>zp2</predmet>
+				<ocena1>10</ocena1>
+			</ocena>
+			<ocena>
+				<predmet>pro</predmet>
+				<ocena1>8</ocena1>
+			</ocena>
+			<ocena>
+				<predmet>rko</predmet>
+				<ocena1>7</ocena1>
+			</ocena>
+			<ocena>
+				<predmet>rai</predmet>
+				<ocena1>9</ocena1>
+			</ocena>
+	</student>
+		<student>
+		<imePriimek>Anijel Volk</imePriimek>
+		<letnik>2</letnik>
+		<smer>INF</smer>
+		<stevilka>1267</stevilka>
+			<ocena>
+				<predmet>zp2</predmet>
+				<ocena1>10</ocena1>
+			</ocena>
+			<ocena>
+				<predmet>pro</predmet>
+				<ocena1>8</ocena1>
+			</ocena>
+			<ocena>
+				<predmet>rko</predmet>
+				<ocena1>7</ocena1>
+			</ocena>
+			<ocena>
+				<predmet>rai</predmet>
+				<ocena1>9</ocena1>
+			</ocena>
+	</student>
+</redovalnica>

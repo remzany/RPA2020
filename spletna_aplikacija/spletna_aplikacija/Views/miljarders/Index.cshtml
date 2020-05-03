@@ -1,0 +1,49 @@
+﻿@model IEnumerable<spletna_aplikacija.Models.miljarder>
+
+@{
+    ViewBag.Title = "Index";
+}
+<h2></h2>
+<p>
+    @Html.ActionLink("Ustvari", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Ime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Priimek)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.premozenje)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.podjetje)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Priimek)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.premozenje)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.podjetje)
+        </td>
+        <td>
+            @Html.ActionLink("Spremeni", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Podrobnosti", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Izbriši", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

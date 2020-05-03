@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="evi.xsl"?> 
+
+<!DOCTYPE note SYSTEM "evidenca.dtd">
+<student>
+	<ime>Jože</ime>
+	<priimek>Kos</priimek>
+	<smer>informatika</smer>
+	<index>2/2009</index>
+	<letnik>2</letnik>
+	<izpit>
+		<predmet>ZP2</predmet>
+		<datum>1.9.2009</datum>
+		<ocena>8</ocena>
+		<predmet>PROGRAMIRANJE</predmet>
+		<datum>15.9.2009</datum>
+		<ocena>7</ocena>
+	</izpit>
+</student>
+<student>
+	<ime>Ana</ime>
+	<priimek>Leban</priimek>
+	<smer>informatika</smer>
+	<index>1/2009</index>
+	<letnik>1</letnik>
+	<izpit>
+		<predmet>ZP1</predmet>
+		<datum>2.9.2009</datum>
+		<ocena>9</ocena>
+		<predmet>Praksa</predmet>
+		<datum>12.9.2009</datum>
+		<ocena>10</ocena>
+	</izpit>
+</student>

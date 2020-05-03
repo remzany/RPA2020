@@ -1,0 +1,37 @@
+﻿<h1>Demo sintakse razorja</h1>
+<h2>Demo sintakse razorja @DateTime.Now.ToShortDateString()</h2>
+
+
+@{
+	string datum = DateTime.Now.ToLongDateString();
+	string pozdrav = "Pozdravljen svet";
+}
+
+<h3> danasnji datum in cas : @datum</h3>
+
+
+
+@{
+	string datum1 = DateTime.Now.ToLongDateString();
+	@:Danes je  @datum1 <br />
+	@pozdrav
+}
+
+@{
+	string datum2 = DateTime.Now.ToLongDateString();
+	<text> Danes je: </text> <br />
+	@pozdrav
+}
+
+@* if stavek*@
+@if (DateTime.IsLeapYear(DateTime.Now.Year))
+{
+	@DateTime.Now.Year <text> je prestopno leto </text>
+}
+else { 
+	@DateTime.Now.Year @: ni prestopno leto
+}
+
+@for (int i = 0; i < 5; i++) { 
+	@i.ToString() <br />
+}

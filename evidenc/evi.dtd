@@ -1,0 +1,13 @@
+<!DOCTYPE evi [
+<!ELEMENT student(ime,priimek,smer,index,letnik)>
+<!ELEMENT ime (#PCDATA)>
+<!ELEMENT priimek (#PCDATA)>
+<!ELEMENT smer (#PCDATA)>
+<!ELEMENT index (#PCDATA)>
+<!ELEMENT letnik (#PCDATA)>
+
+<!ELEMENT izpit (predmet, datum, ocena)>
+<!ELEMENT predmet (#PCDATA)>
+<!ELEMENT datum (#PCDATA)>
+<!ELEMENT ocena (#PCDATA)>
+]>

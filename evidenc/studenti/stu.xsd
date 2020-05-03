@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<xs:shema xmlns:xs="http://www.w3.org/2001/XMLShema">
+<xs:element name="redovalnica">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="student">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="imePriimek">
+							<xs:simpleType>
+								<xs:restriction type="xs:string"/>
+							</xs:simpleType>
+						<xs:element name="letnik" base="xs:integer"/>
+						<xs:element name="smer" base="xs:string">
+							<xs:simpleType>
+								<xs:restriction>
+								<xs:maxLength value="3">
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="stevilka" base="xs:integer">
+							<xs:simpleType>
+								<xs:restriction>
+								<xs:maxLength value="4"/>
+								<xs:pattern value="[0-9][0-9][0-9][0-9]"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="ocena">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="ocena1" base="xs:integer"/>
+									<xs:element name="predmet" base="xs:string"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+</xs:shema>

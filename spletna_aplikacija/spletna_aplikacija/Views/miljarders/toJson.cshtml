@@ -1,0 +1,30 @@
+﻿@model IEnumerable<spletna_aplikacija.Models.miljarder>
+
+@{
+    ViewBag.Title = "Index";
+}
+<h2></h2>
+<p>
+    @Html.ActionLink("Ustvari", "Create")
+</p>
+<table class="table">
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => (item.Ime))
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Priimek)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.premozenje)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.podjetje)
+            </td>
+        </tr>
+    }
+
+</table>
